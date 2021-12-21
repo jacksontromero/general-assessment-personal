@@ -1,0 +1,11 @@
+name = "general-assessment"
+type = "javascript"
+
+account_id = "880040ecc03a66d9b5e0ebc37693aee9"
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2021-12-16"
+kv_namespaces = [
+         { binding = "MY_KV", id = "c13c7a1a99c8423d9acb65376c858628", preview_id = "c13c7a1a99c8423d9acb65376c858628"}
+]
