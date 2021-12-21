@@ -29,7 +29,7 @@
                   <label class="block text-gray-700 text-sm font-bold mb-2" for="content">
                     Content
                   </label>
-                  <textarea required v-model="content" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="content" placeholder="A long time ago in a galaxy..."></textarea>
+                  <textarea rows="15" required v-model="content" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="content" placeholder="A long time ago in a galaxy..."></textarea>
                 </div>
 
                 <div class="flex items-center justify-between">
@@ -38,6 +38,7 @@
                   </button>
                 </div>
               </form>
+              <p class="mt-2 text-xs text-gray-600">Posts may take a few seconds to appear, refresh the page until they do</p>
             </div>
 
 
@@ -73,7 +74,7 @@ export default {
       this.$emit('close')
     },
     async makePost(e) {
-      e.preventDefault()
+      // e.preventDefault()
       this.close()
 
       const data = {
